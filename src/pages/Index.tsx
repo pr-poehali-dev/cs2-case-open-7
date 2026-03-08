@@ -151,13 +151,13 @@ export default function Index() {
 
           <h1 className="font-oswald font-bold mb-6 leading-none animate-slide-up delay-100"
             style={{ fontSize: 'clamp(2.5rem, 7vw, 5.5rem)', color: '#FFFBF0' }}>
-            ОТКРЫВАЙ КЕЙСЫ КС2{' '}
-            <span className="rarity-gold">БЕСПЛАТНО</span>
+            КЕЙСЫ КС2 —{' '}
+            <span className="rarity-gold">ОТКРЫТИЕ КЕЙСОВ КС2</span>
           </h1>
 
           <p className="font-rubik text-lg mb-8 max-w-2xl mx-auto animate-slide-up delay-200"
             style={{ color: '#9CA3AF' }}>
-            Лучший сайт для открытия кейсов CS2. Бесплатные кейсы ежедневно,
+            Лучший сайт для открытия кейсов КС2 онлайн. Бесплатные кейсы кс2 каждый день,
             кейс батл, вывод скинов в Стим. Дешевле чем в Steam!
           </p>
 
