@@ -1,5 +1,7 @@
 import Icon from '@/components/ui/icon';
 
+const SITE_URL = "https://skyboxcase.ru";
+
 const CASE_IMAGE = "https://cdn.poehali.dev/projects/5805c55d-f42c-47ec-bbd4-d48003a6cc92/files/3c464076-b1be-47ea-b425-7f2b6fffbe1b.jpg";
 const KNIFE_IMAGE = "https://cdn.poehali.dev/projects/5805c55d-f42c-47ec-bbd4-d48003a6cc92/files/7853d425-42a3-4aed-b7b1-8fef46ba52fd.jpg";
 const HERO_IMAGE = "https://cdn.poehali.dev/projects/5805c55d-f42c-47ec-bbd4-d48003a6cc92/files/36cdcdac-0398-431e-90f7-d3ca98b5da98.jpg";
@@ -128,8 +130,8 @@ export default function Index() {
           <a href="#faq" className="font-rubik text-sm font-medium transition-colors hover:text-yellow-400" style={{ color: '#9CA3AF' }}>FAQ</a>
         </div>
         <div className="flex items-center gap-3">
-          <button className="btn-secondary-cs px-4 py-2 rounded text-sm">Войти</button>
-          <button className="btn-primary-cs px-4 py-2 rounded text-sm">Регистрация</button>
+          <a href={SITE_URL} target="_blank" rel="noopener noreferrer" className="btn-secondary-cs px-4 py-2 rounded text-sm">Войти</a>
+          <a href={SITE_URL} target="_blank" rel="noopener noreferrer" className="btn-primary-cs px-4 py-2 rounded text-sm">Регистрация</a>
         </div>
       </nav>
 
@@ -162,14 +164,14 @@ export default function Index() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-slide-up delay-300">
-            <button className="btn-primary-cs px-8 py-4 rounded-lg text-lg flex items-center gap-2 justify-center glow-orange">
+            <a href={SITE_URL} target="_blank" rel="noopener noreferrer" className="btn-primary-cs px-8 py-4 rounded-lg text-lg flex items-center gap-2 justify-center glow-orange">
               <Icon name="Gift" size={20} />
               Получить бесплатный кейс
-            </button>
-            <button className="btn-secondary-cs px-8 py-4 rounded-lg text-lg flex items-center gap-2 justify-center">
+            </a>
+            <a href={SITE_URL} target="_blank" rel="noopener noreferrer" className="btn-secondary-cs px-8 py-4 rounded-lg text-lg flex items-center gap-2 justify-center">
               <Icon name="Swords" size={20} />
               Кейс Батл
-            </button>
+            </a>
           </div>
 
           <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 animate-slide-up delay-400">
@@ -204,10 +206,10 @@ export default function Index() {
 
           <div className="flex flex-wrap gap-3 justify-center mb-10">
             {["Все кейсы", "Популярные", "Дешёвые", "С ножами", "Бесплатные"].map((tab, i) => (
-              <button key={tab}
+              <a key={tab} href={SITE_URL} target="_blank" rel="noopener noreferrer"
                 className={`font-oswald px-5 py-2 rounded text-sm tracking-wider transition-all ${i === 0 ? 'btn-primary-cs' : 'btn-secondary-cs'}`}>
                 {tab}
-              </button>
+              </a>
             ))}
           </div>
 
@@ -260,10 +262,10 @@ export default function Index() {
                         </span>
                       )}
                     </div>
-                    <button className="btn-primary-cs px-4 py-2 rounded text-sm flex items-center gap-1">
+                    <a href={SITE_URL} target="_blank" rel="noopener noreferrer" className="btn-primary-cs px-4 py-2 rounded text-sm flex items-center gap-1">
                       <Icon name="Package" size={14} />
                       Открыть
-                    </button>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -271,9 +273,9 @@ export default function Index() {
           </div>
 
           <div className="text-center mt-10">
-            <button className="btn-secondary-cs px-10 py-4 rounded-lg font-oswald text-lg tracking-wider">
+            <a href={SITE_URL} target="_blank" rel="noopener noreferrer" className="btn-secondary-cs px-10 py-4 rounded-lg font-oswald text-lg tracking-wider inline-block">
               Показать все кейсы КС2
-            </button>
+            </a>
           </div>
         </div>
       </section>
@@ -311,10 +313,10 @@ export default function Index() {
                   </li>
                 ))}
               </ul>
-              <button className="btn-primary-cs px-8 py-4 rounded-lg text-lg flex items-center gap-2 glow-orange">
+              <a href={SITE_URL} target="_blank" rel="noopener noreferrer" className="btn-primary-cs px-8 py-4 rounded-lg text-lg flex items-center gap-2 glow-orange inline-flex">
                 <Icon name="Swords" size={20} />
                 Начать батл
-              </button>
+              </a>
             </div>
 
             <div className="relative">
@@ -383,9 +385,9 @@ export default function Index() {
               Каждый день бесплатное открытие кейсов КС2 для всех зарегистрированных игроков.
               Бесплатные кейсы CS2 — просто за вход на сайт!
             </p>
-            <button className="btn-primary-cs px-10 py-4 rounded-lg text-xl glow-orange">
+            <a href={SITE_URL} target="_blank" rel="noopener noreferrer" className="btn-primary-cs px-10 py-4 rounded-lg text-xl glow-orange inline-block">
               Получить бесплатный кейс
-            </button>
+            </a>
           </div>
         </div>
       </section>
